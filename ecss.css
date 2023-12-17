@@ -1,0 +1,60 @@
+body {
+    background-image: url('https://img.freepik.com/vector-premium/fondo-abstracto-moderno_72655-4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+
+}
+p{
+    font-family: 'Montaga', serif;
+}
+.sobre{
+    left: 860px;
+}
+h1{
+    position: absolute;
+    color: lawngreen;
+    left: 40px;
+}
+.p1{
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    color: gainsboro;
+    width: 500px;
+}
+.p2{
+    position: absolute;
+    top: 80px;
+    left: 690px;
+    color: gainsboro;
+    width: 560px;
+}
+.mi{
+    color: white;
+    position: absolute;
+    top: 440px;
+    left: 40px;
+    border-radius: 10px;
+}
+.este{
+    color: gold;
+    text-align: center;
+}
+.est{
+    text-align: center;
+}
+#emmet{
+    position: absolute;
+    top: 280px;
+    left: 770px;
+}
+#piter{
+    position: absolute;
+    top: 210px;
+    left: 40px;
+}
+.a1, .a2{
+    color: gold;
+}

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="JavaScript.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>JAVASCRIPT</h1>
+    <h2 >Evolución de JavaScript</h2>
+    <ol class="t">
+        <li><strong>Nacimiento (1995): </strong> </li>
+        <li><strong>Estándar ECMAScript (1997): </strong></li>
+        <li><strong>AJAX y Resurgimiento (2005): </strong>.</li>
+        <li><strong>Node.js (2009): </strong></li>
+        <li><strong>HTML5 (2010): </strong></li>
+        <li><strong>ECMAScript 6 (2015): </strong></li>
+        <li><strong>Frameworks Frontend (2010 en adelante): </strong> </li>
+        <li><strong>WebAssembly (2017): </strong></li>
+        <li><strong>TC39 y Actualizaciones Anuales (2015 en adelante)</strong></li>
+    </ol>
+    <h2 >Enlazar JavaScript con HTML</h2>
+    <ul>
+        <li>Enlazar JS en el mismo documento HTML</li>
+         <p class="parrafo">&lt;script&gt;<br>
+        Codigo Java Script <br>
+        &lt;/script&gt;</p>
+        <li>Enlazar JS desde una fuente externa</li>
+        <p class="parrafo">&lt;script scr="nombre del codigo"&gt;&lt;\script&gt;</p>
+    </ul>
+    <h2 >Variables</h2>
+    <table border="1">
+        <th>var</th>
+        <th>let</th>
+        <tr>
+            <td>se puede inicializar <br>luego declarar </td>
+            <td>primero debe declararse <br>luego recien se inicializa</td>
+        </tr>
+        <tr>
+            <td>no hay límites para declarar <br>la variable</td>
+            <td>la variable solo se debe <br>declarar una vez</td>
+        </tr>
+    </table>
+    <h2 >Declarar Variables</h2>
+    <ol class="t">
+        <li><strong>Boolean:</strong> var si=true;</li>
+        <li><strong>null:</strong> var x=null;</li>
+        <li><strong>Integer:</strong> var miEntero=1;</li>
+        <li><strong>String:</strong> var dato="Este es un string"</li>
+        <li><strong>Array:</strong> var array=["tree", 795, [0, 1, 2]]</li>
+        <li><strong>Object:</strong> var myCar = new Object();</li>
+    </ol>
+    <h2 >Operadores</h2>
+    <table border="1">
+        <th>OPERADORES</th>
+        <th>SIGNOS</th>
+        <tr>
+            <th>Aritmeticos</th>
+            <td>+&nbsp;-&nbsp;*&nbsp;/&nbsp;%&nbsp;++&nbsp;--</td>
+        </tr>
+        <tr>
+            <th>Lógicos</th>
+            <td>&&&nbsp;||&nbsp;!</td>
+        </tr>
+        <tr>
+            <th>Comparación</th>
+            <td>&gt;&nbsp;&gt;=&nbsp;&lt;&nbsp;&lt;=&nbsp;==&nbsp;!=&nbsp;===&nbsp;!==</td>
+        </tr>
+        <tr>
+            <th>Asignación</th>
+            <td>+=&nbsp;-=&nbsp;*=&nbsp;/=&nbsp;%=</td>
+        </tr>
+    </table>
+    <h2 >Estructuras de Control</h2>
+    <ol>
+        <li>If</li>
+        <p>if(condicion) {<br>
+            codigo necesario <br> } <br>
+            else {<br>
+            codigo alternativo }</p>
+        <li>Switch</li>
+        <p>switch(opcion) { <br>
+            case caso1 : <br>
+            sentencias para caso1; <br>
+            break; <br>
+            ...... <br>
+            case casoN : <br>
+            sentencias para casoN; <br>
+            break; <br>
+            default : <br>
+            sentencias por defecto; <br>
+            break; <br>
+            }</p>
+    </ol>
+    <h2 >Bucles</h2>
+    <ol>
+        <li>For</li>
+        <p>for (var i = 0; i &lt; 9; i++) { <br>
+            n += i; <br>
+            mifuncion(n); <br>
+          } <br>
+          var n;  </p>
+        
+        <li>While</li>
+        <p>while (n &lt; 3) { <br>
+            n++; <br>
+            x += n; <br>
+          } <br>
+          var n; <br> var x;  </p>
+        
+        <li>do While</li>
+          <p>let result = '&nbsp;'; <br>
+            let i = 0; <br>
+            
+            do { <br>
+              i = i + 1; <br>
+              result = result + i; <br>
+            } while (i &lt; 5); <br>
+            
+            console.log(result);</p>
+
+        <li>for Each</li>
+            <p>var miArray = [1, 2, 3, 4]; <br>
+                miArray.forEach(function (valor, indice) { <br>
+                console.log(indice + " : " + valor); <br>
+                }); <br>
+                &sol;&sol; Devuelve lo siguiente <br>
+                &sol;&sol; 0 : 1 <br>
+                &sol;&sol; 1 : 2 <br>
+                &sol;&sol; 2 : 3</p>
+
+        <li>for of</li>
+            <p>let iterable = "fis"; <br>
+                for (let valor of iterable) { <br>
+                console.log(valor); <br>
+                } <br>
+                &sol;&sol; "f" <br>
+                &sol;&sol; "i" <br>
+                &sol;&sol; "s"</p>
+                
+        <li>for in</li>
+        <p>&sol;&sol;definicion del objeto cliente <br>
+            var cliente = {
+            nombre: "Juan Perez", <br>
+            direccion: "Av. Honorio Delgado 920", <br>
+            telefono: "012705689", <br>
+            ciudad: "Lima" <br>
+            }; <br><br>
+            for(var indice in cliente) { <br>
+            console.log(indice+" : "+cliente[indice] ); <br>
+            } <br>
+            &sol;&sol; Devuelve: <br>
+            &sol;&sol; nombre : Juan Perez <br>
+            &sol;&sol; dirección : Av. Honorio Delgado 920 <br>
+            &sol;&sol; teléfono : 012705689 <br>
+            &sol;&sol; ciudad : Lima</p>
+    </ol>
+    <h2 >Funciones</h2>
+    <ol>
+        <li>Sintaxis de un Funcion</li>
+        <p>
+            function NombreFuncion(param1, ..., paramN){ <br>
+                Código de la función <br>
+                return Valor; <br>
+                }
+        </p>
+        <li>Invocar una funcion</li>
+        <ul>
+            <li>Desde JS</li>
+            <li>Ocurre un evento</li>
+            <li>Autoinvocado</li>
+        </ul>
+        <li>Funcion anonima</li>
+        <p>
+            var x = function (a, b) {return a * b}; <br>
+            var z = x(4, 3); <br>
+        </p>
+        <li>Funcion autoinvocada</li>
+        <p>
+            (function () { <br>
+                var x = "Hola!!"; &sol;&sol; Función auto invocada <br>
+                })();
+        </p>
+        <li>Funcion flecha</li>
+        <p>
+            const x = (x, y) => { <br>
+                let p = x * y; <br>
+                return p <br>
+                };
+        </p>
+    </ol>
+    <h2 >Módulo Math</h2>
+    <table border="1">
+        <th>Funcion Matemática</th>
+        <th>Valor Devuelto</th>
+        <tr>
+            <th>Math.PI;
+                <td>Pi = 3.14159265...</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.E;
+                <td>e = 2.7182818...</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.random();
+                <td>Número aleatorio entre 0 y 1</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.pow(2,6);
+                <td>Potencia de 2 elevado a 6 = 64</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.sqrt(4);
+                <td>raiz cuadrada de 4 = 2</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.min(4,3,1);
+                <td>Devuelve el numero mínimo = 1</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.max(4,3,1);
+                <td>Devuelve el numero máximo = 4</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.floor(6.4);
+                <td>Devuelve el entero más próxima por debajo = 6</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.ceil(6.4);
+                <td>Devuelve el entero más próxima por encima = 7</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.round(6.4);
+                <td>Redondea a la parte entera más próxima = 6</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.abs(x);
+                <td>Devuelve el valor absoluto de un número</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Funcion Trigonometrica
+            </th>
+            <th>Valor devuelto</th>
+        </tr>
+        <tr>
+            <th>Math.sin(x);
+                <td>Función seno de un valor</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.cos(x);
+                <td>Función coseno de un valor</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.tan(x);
+                <td>Función tangente de un valor</td>
+            </th>
+        </tr>
+        <tr>
+            <th>Math.log(x);
+                <td>Función logaritmo de un valor</td>
+            </th>
+        </tr>
+    </table>
+    <h2 >Objetos</h2>
+    <p><strong>Objeto </strong>colección de propiedades</p>
+    <p><strong>Propiedades </strong>asociación entre nombre y valor</p>
+    <p><strong>Nombre </strong>identificador de la variable</p>
+    <p><strong>Valor </strong>puede ser una característica, función, objeto</p>
+    <p><strong>Creación de un objeto</strong></p>
+    <ol>
+        <li>&nbsp;
+            <p>var myCar = new Object(); <br>
+                myCar.make = "Ford"; <br>
+                myCar.model = "Mustang"; <br>
+                myCar.year = 1969; <br></p>
+        </li>
+        <li>&nbsp;
+            <p>
+                var myCar = { <br>
+                    make: "Ford", <br>
+                    model: "Mustang", <br>
+                    year: 1969, <br>
+                  };
+            </p>
+        </li>
+    </ol>
+    <h2 >Clases</h2>
+    <p>Una manera de definir una clase es mediante una declaración de clase. Para declarar una clase, se utiliza la palabra reservada class y un nombre para la clase "Rectangulo".</p>
+    <ol>
+        <li>Definir una clase</li>
+        <ul>
+            <li>&nbsp;
+                <p>
+                    class Rectangulo { <br>
+                        constructor(alto, ancho) { <br>
+                          this.alto = alto;<br>
+                          this.ancho = ancho; <br>
+                        }
+                      }
+                </p>
+            </li>
+            <li>&nbsp;
+                    <p>
+                        let Rectangulo = class Rectangulo2 { <br>
+                            constructor(alto, ancho) { <br>
+                              this.alto = alto; <br>
+                              this.ancho = ancho; <br>
+                            } <br>
+                          };
+                    </p>
+            </li>
+        </ul>
+       
+        <li>Constructor</li>
+        <p>
+            constructor(x, y) { <br>
+                this.x = x; <br>
+                this.y = y; <br>
+              } <br>
+        </p>
+        <li>Metodo estático</li>
+        <p>
+            static distancia(a, b) { <br>
+                const dx = a.x - b.x; <br>
+                const dy = a.y - b.y; <br>
+            
+                return Math.sqrt(dx * dx + dy * dy); <br>
+              }
+        </p>
+        <li>Ejemplo clase</li>
+        <p>
+            class Punto { <br>
+                constructor(x, y) { <br>
+                  this.x = x; <br>
+                  this.y = y; <br>
+                } <br>
+              
+                static distancia(a, b) { <br>
+                  const dx = a.x - b.x; <br>
+                  const dy = a.y - b.y; <br>
+              
+                  return Math.sqrt(dx * dx + dy * dy); <br>
+                } <br>
+              } <br>
+              
+              const p1 = new Punto(5, 5); <br>
+              const p2 = new Punto(10, 10); <br>
+              
+              console.log(Punto.distancia(p1, p2)); &sol;&sol; 7.0710678118654755 <br>
+        </p>
+    </ol>
+    
+</body>
+</html>

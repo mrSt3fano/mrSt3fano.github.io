@@ -1,0 +1,41 @@
+.ahtml{
+    
+    font-family: 'Russo One', sans-serif;
+    color: aliceblue;
+}
+#ty{
+    position: relative;
+    left: 230px;
+}
+#berners{
+    position: relative;
+    left: 30px;
+}
+#k1{
+    position: relative;
+    left: 250px;
+}
+#a{
+    position: relative;
+    left: 150px;
+}
+.qq{
+    position: relative;
+    left: 350px;
+}
+p{
+    color: burlywood;
+    font-family: 'Josefin Sans', sans-serif;
+}
+li, table{
+    color: darksalmon;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+body {
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-tecnologia-negro-degradado_23-2149209060.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}

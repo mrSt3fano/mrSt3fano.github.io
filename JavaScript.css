@@ -1,0 +1,33 @@
+body {
+        background-image: url('https://midu.dev/images/wallpapers/una-taza-de-javascript.png');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+    }
+p{
+    color: gray;
+    font-family: 'Young Serif', serif;
+}
+h1{
+    color: gold;
+    text-align: center;
+    font-size: 60px;
+}
+h2{
+    color: darkorange;
+    font-size: 35px;
+}
+li{
+    color: aqua;
+    text-transform: uppercase;
+}
+table{
+    color: antiquewhite;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: black;
+}
+th{
+    color: lightsalmon;
+}

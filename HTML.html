@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="htmlcss.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&family=Russo+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>HTML</title>
+</head>
+<body>
+    <h2 class="ahtml">Acerca de HTML</h2>
+    <p class="historia">HTML, o Hypertext Markup Language, fue introducido por <a target="_blank" href="https://es.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a> en 1991 como parte
+        del proyecto World Wide Web (WWW) en el <a target="_blank" href="https://en.wikipedia.org/wiki/CERN">CERN</a>. 
+        La versión inicial, HTML 1.0, era simple y destinada a la creación de documentos básicos con hipervínculos. A medida que la web creció, 
+        se introdujeron nuevas versiones de HTML con características mejoradas. HTML 2.0 se lanzó en 1995 
+        y HTML 3.2 en 1997. Sin embargo, la evolución más significativa llegó con HTML4 en 1997, 
+        que introdujo una mayor capacidad de diseño y estilo.
+
+        El desarrollo de HTML continuó con XHTML, una versión más estricta y basada en XML, pero luego 
+        se volvió a simplificar con HTML5, la versión actual y ampliamente adoptada, trajo consigo mejoras sustanciales en multimedia, gráficos, semántica y 
+        accesibilidad, estableciendo la base para la creación de aplicaciones web modernas.</p>
+        <img id="berners" alt="TimBernersLee.img" src="https://www.bbvaopenmind.com/wp-content/uploads/2015/06/BBVA-OpenMind-tim-berners-lee-1-1.jpg">    
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcpalukmnQWR8CYbMAqDVfRf3bp_aOt8puKw&usqp=CAU" alt="HTML.img" id="k1">
+        <h2 class="ahtml">XHTML</h2>
+        <p class="xhtml">XML o Lenguaje de Marcado Extensible es un estándar que se utiliza para almacenar e
+                intercambiar información estructurada entre diferentes plataformas, XML admite el intercambio de 
+                información entre sistemas de computación, como sitios web, bases de datos y aplicaciones 
+                de terceros</p>
+    <h2 class="ahtml">Anatomía de un elemento HTML</h2>
+    <ul class="anatomia1">
+        <li><strong>La etiqueta de apertura:</strong> Consiste en el nombre del elemento (en este ejemplo, p para el párrafo), envuelto en corchetes angulares de apertura y cierre.</li>
+        <li><strong>El contenido:</strong> Este es el contenido del elemento. En este ejemplo, es el texto del párrafo.        </li>
+        <li><strong>La etiqueta de cierre:</strong> Esta es la misma que la etiqueta de apertura, excepto que incluye una barra diagonal delante del nombre del elemento. Esto marca donde termina el elemento.</li>
+    </ul>
+    <img id="ty" alt="ejm" src="https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png">
+    <h2 class="ahtml">Etiquetas</h2>
+    <p class="atr">Los atributos contienen información adicional sobre el elemento que no aparecerá en el contenido.</p>
+    <p class="etiqueta">Las etiquetas HTML son el lenguaje utilizado para estructurar y definir el contenido 
+    en un documento HTML. 
+    Cada etiqueta contiene instrucciones sencillas que indican al navegador cómo dar formato al texto 
+    y a definir los diversos elementos de la página web, se puede utilizar etiquetas HTML para 
+    aplicar cursivas, crear saltos de línea, insertar objetos multimedia, crear listas con viñetas o 
+    para definir diferentes tipos de contenido en una página web, como encabezados, párrafos, imágenes, 
+    enlaces, formularios y mucho más.</p>
+    <p class="img">La etiqueta imagen sirve para poner una imagen en el documento HTML, dentro de esta etiqueta también  puede tomar una serie de atributos:  </p>
+    <ul class="aea">
+        <li><strong>El atributo ID: </strong>un elemento HTML sólo puede tener un ID que pertenezca a ese único elemento.</li>
+        <li><strong>El atributo CLASS: </strong>varios elementos pueden usar un nombre de clase.</li>
+        <li><strong>El atributo SRC: </strong> es un atributo requerido que especifica la ubicación de la imagen.</li>
+        <li><strong>El atributo ALT: </strong> especifica una descripción de texto de la imagen.</li>
+        <li><strong>El atributo WIDTH: </strong> especifica el ancho de la imagen con la unidad en píxeles.</li>
+        <li><strong>El atributo HEIGHT: </strong> especifica la altura de la imagen con la unidad en píxeles.</li>
+    </ul>
+    <img class="qq" alt="img" src="https://i1.wp.com/www.webdisenia.com/wp-content/uploads/2015/03/00.png?resize=513%2C187">
+    <h2 class="ahtml">Anatomia HTML</h2>
+    <ul class="anatomia2">
+        <li><strong>&lt;!DOCTYPE html&gt;: </strong>El tipo de documento. Cuando HTML era joven (1991-1992), los doctype estaban destinados a actuar como enlaces a un conjunto de reglas que la página HTML tenía que seguir para ser considerada un buen HTML.</li>
+        <li><strong>&lt;html&gt;&lt;/html&gt;: </strong>Este elemento envuelve todo el contenido de la página. A veces se le conoce como el elemento raíz.</li>
+        <li><strong>&lt;head&gt;&lt;/head&gt;: </strong>Este elemento actúa como un contenedor para todo lo que desea incluir en la página HTML, que no es el contenido que la página mostrará a los espectadores.</li>
+        <li><strong>&lt;meta charset="utf-8"&gt;: </strong>Este elemento representa metadatos que no pueden ser representados por otros elementos HTML relacionados con metadatos. El atributo charset especifica la codificación de caracteres para su documento como UTF-8, que incluye la mayoría de los caracteres de la gran mayoría de los lenguajes humanos escritos</li>
+        <li><strong>&lt;script&gt;&lt;/script&gt;: </strong>Este código se ejecuta en el navegador del usuario al cargar la página, o cuando sucede algo especial como puede ser el pulsar sobre un enlace.</li>
+        <li><strong>&lt;title&gt;&lt;/title&gt;: </strong>Esto establece el título de la página, que es el título que aparece en la pestaña del navegador en la que se carga la página.</li>
+        <li><strong>&lt;body&gt;&lt;/body&gt;: </strong>Contiene todo el contenido que se muestra en la página, incluidos texto, imágenes, vídeos, juegos, pistas de audio reproducibles o cualquier otra cosa.</li>     
+    </ul>
+    <h2 class="ahtml">Entidades</h2>
+    <p class="entidad">En HTML, los caracteres &gt;, &lt;, &quot;, &apos; y &amp; son caracteres especiales. Son partes de la sintaxis HTML en sí.</p>
+    <table class="k" border="1">
+        <tr>
+            <td>Carácter literal</td>
+            <td>Referencia de carácter equivalente</td>
+        </tr>
+        <tr>
+            <td>&lt;</td>
+            <td>&amp;lt;</td>
+        </tr>
+        <tr>
+            <td>&gt;</td>
+            <td>&amp;gt;</td>
+        </tr>
+        <tr>
+            <td>&quot;</td>
+            <td>&amp;quot;</td>
+        </tr>
+        <tr>
+            <td>&apos;</td>
+            <td>&amp;apos;</td>
+        </tr>
+        <tr>
+            <td>&amp;</td>
+            <td>&amp;amp;</td>
+        </tr>
+    </table>
+    <h2 class="ahtml">DOM</h2>
+    <p class="dom">DOM (Document Object Model) es una interfaz para documentos HTML y XML que se representa como un
+        árbol de elementos. Permite leer y manipular el contenido, la estructura y los estilos de la página con un
+        lenguaje de scripting como JavaScript.</p>
+        <ul>
+            <li>A través de la etiqueta &lt;script&gt;, se puede comenzar a manipular el documento o los elementos de la página.</li>
+            <li>El DOM nos ofrece una multitud de propiedades y métodos para acceder a los diferentes elementos y poder modificarlos.</li>
+        </ul>
+        <img id="a" src="https://www.freecodecamp.org/news/content/images/2022/06/DOM-tree.png" alt="arbol" width=1000 height=630>
+</body>
+</html>
