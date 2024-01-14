@@ -1,53 +1,136 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
-    <title>Portafolio Web</title>
+    <title>Mi Portafolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+        }
+
+        h1,
+        h2 {
+            margin: 0;
+        }
+
+        #aea {
+            margin: 0;
+            text-align: center;
+        }
+
+        .principal {
+            display: flex;
+            justify-content: flex-end;
+            background-color: #cfcbcb;
+        }
+
+        .contq {
+            max-width: 380px;
+            margin: 2em auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-left: 10px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            /* Ajusta este valor según sea necesario */
+            margin-right: 50px;
+            /* Ajusta este valor según sea necesario */
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 20px;
+            /* Bordes redondeados */
+            color: #fff;
+            background-color: #658ca7;
+            /* Color de fondo */
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        #bot {}
+    </style>
 </head>
+
 <body>
-    <select id="fondo">
-        <option value="url('https://i.pinimg.com/originals/55/01/60/5501609ee45d514d1f2c4a63502045e2.gif')">Imagen por defecto</option>
-        <option value="url('https://i.pinimg.com/originals/45/b2/e7/45b2e764d14cf9dee6dc3ed1ba0ad680.gif')">Imagen 1</option>
-        <option value="url('https://i.pinimg.com/originals/96/69/aa/9669aaa4d1e30a0e89063fde183b768e.gif')">Imagen 2</option>
-        <option value="url('https://i.pinimg.com/originals/13/13/4e/13134e7a4af3d36fff54ed599fc26687.gif')">Imagen 3</option>
-    </select>
-    
-    <h1>Portafolio Electrónico</h1>
-    <img id="fot" src="\foto.jpg" alt="stefano" >
-    <div>
-        <br><h3 class="curso">ASIGNATURA:</h3>
-        <h4 class="name1">Desarrollo de Aplicaciones Web</h4><br><br>
-        <h3 class="facultad">FACULTAD:</h3>
-        <h4 class="name2">Ingeniería de Sistemas</h4><br><br>
-        <h3 class="nombre">ESTUDIANTE: </h3>
-        <h4 class="name3">Stéfano Carlos Soto Fabián</h4><br><br>
-        <h3 class="docente">DOCENTE: </h3>
-        <h4 class="name4">Ing. Jaime Suasnabar Terrel</h4>
-        <button id="boton">Generador Emmet</button>
-        <button id="boton1">HTML</button>
-        <button id="boton2">CSS</button>
-        <button id="boton3">JavaScript</button>
-        <button id="boton4">Frameworks para HTML</button>
+
+    <header>
+        <h1>Mi Portafolio Electrónico</h1>
+        <br>
+        <h2>Desarrollo de Aplicaciones Web</h2>
+
+    </header>
+
+    <div class="principal">
+        <div class="contq">
+            <img src="foto.jpg" alt="Mi Foto" width="250px" height="330px">
+            <h3>Stefano Carlos Soto Fabian</h3>
+            <footer><a href="mailto:stefano13soto@gmail.com">stefano13soto@gmail.com</a>
+                <a>983035075</a>
+            </footer>
+        </div>
+        <div class="container">
+            <h2 id="aea">Bienvenida e Introducción</h2>
+            <p>Hola, me llamo Stéfano Carlos Soto Fabián, estudiante de la carrera de <strong>Ingeniería de
+                    Sistemas</strong> de la <strong>Universidad Nacional del Centro del Perú</strong>
+                . <br> En este portafolio,
+                ahondaré sobre mi experiencia en el curso de Desarrollo de Aplciaciones Web
+                dividiendo los temas tratados en semanas acorde al calendario académico.</p>
+
+            <h2>Tabla de contenido</h2>
+            <h4>Primer Consolidado</h4>
+
+            <button onclick="retorno('\Emmet.html')">Semana1</button>
+            <button onclick="retorno('\HTML.html')">Semana2</button>
+            <button onclick="retorno('\css.html')">Semana3</button>
+            <button onclick="retorno('\JavaScript.html')">Semana4</button>
+            <button onclick="retorno('\React.html')">Semana5</button>
+
+            <h4>Segundo Consolidado</h4>
+
+            <button>Semana7</button>
+            <button>Semana9</button>
+            <button>Semana10</button>
+            <button>Semana11</button>
+            <button>Semana12</button>
+
+        </div>
     </div>
-    <h2 class="indice">Índice de Contenido</h2>
-    <h3 class="texto">En la esquina superior izquierda tiene una lista de opciones desplegables para cambiar la temática de la pagina principal. Aquí abajo tiene una serie de botones a su disposición para acceder a los diferentes contenidos desarrollados en el primer consolidado académico.</h3>
-   
-    <img src="\fis.png" alt="fis" width="120px" height="180px" class="im2">
-    <img id="uncp" src="https://upload.wikimedia.org/wikipedia/commons/9/92/Escudo_UNCP.png"> 
 
-    <br><br><footer><a href="mailto:stefano13soto@gmail.com">stefano13soto@gmail.com</a>
-        <a>983035075</a></footer>
-
-    <script src="interaccion.js"></script>
+    <script>
+        const retorno = (e) => {
+            window.open (e,"_blank");
+        };
+    </script>
 </body>
+
 </html>
