@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Desarrollo SERVER SIDE</h1>
+    <h2>Arquitectura multicapas</h2>
+    <p>Esta separación
+        se conoce como LAYERING, que simplemente significa descomponer un sistema de
+        software en sus partes, o capas según preocupaciones y responsabilidades</p>
+    <p>Las Multi Page Application son las Web Clásicas en donde uno dispone de múltiples
+        páginas HTML y cada una carga diferentes contenidos apoyándose en la navegación
+        contra el servidor. Es decir, cada página muestra su contenido y se conecta mediante links
+        con las demás y todas son generadas desde el servidor</p>
+    <img width="400px" height="200px" src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Tres_capas.PNG"
+        alt="multicapa">
+    <h2>Simple Page Aplication(SPA)</h2>
+    <p>Las Single Page Applications son arquitecturas en el que el servidor únicamente dispone
+        de una página html, carga todos los estilos de un css y todos los formatos en el cliente
+        durante el primer acceso.</p>
+    <p>A partir de ese momento únicamente pide datos al servidor y va mostrando diferentes
+        componentes al usuario que existen en la mega página. Pero nunca navega entre páginas</p>
+    <p>Este tipo de Arquitectura aporta flexibilidad ya que permite que el servidor se centre en
+        enviar información al cliente que solo incluya datos.</p>
+    <img width="600px" height="350px"
+        src="https://media.excellentwebworld.com/wp-content/uploads/2020/02/21071551/single-page-applications.jpg"
+        alt="SPA">
+    <h2>Arquitectura Hexagonal</h2>
+    <p>Esta arquitectura, también llamada arquitectura de puertos y adaptadores propone
+        separar nuestra aplicación en distintas capas o regiones, cada una de ellas con su propia
+        responsabilidad permitiendo así que evolucionen de manera aislada, y que cada una de
+        ellas sea testeable e independiente de las demás.</p>
+    <p>Para conseguir esta independencia de capas se utiliza el concepto de puertos y
+        adaptadores.</p>
+    <p><strong>Puerto: </strong>Un puerto no es más que un concepto lógico mediante el cual se define un
+        punto de entrada y salida de la aplicación.</p>
+    <p><strong>Adaptador: </strong>La función del adaptador es la de implementar
+        la conexión con ese puerto y otros servicios externos</p>
+        <img width="700px" height="500px" src="https://miro.medium.com/v2/resize:fit:1400/1*yR4C1B-YfMh5zqpbHzTyag.png" alt="hexagonal">
+</body>
+
+</html>

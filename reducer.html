@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>UseReducer</h1>
+    <h2>Notación:</h2>
+    <pre>
+    <code>
+        function reducer(state, action) {
+            // ...
+          }
+          
+          function MyComponent() {
+            const [state, dispatch] = useReducer(reducer, { age: 42 });
+          }
+  
+          <ol>Parámetros
+            <li>reducer: La función reductora que debe devolver el estado inicial. Debe ser pura, debe tomar el estado y la acción como argumentos, y debe devolver el siguiente estado. El estado y la acción pueden ser de cualquier tipo.</li>
+            <li>initialArg: El valor a partir del cual se calcula el estado inicial. Puede ser un valor de cualquier tipo. Cómo se calcula el estado inicial depende del siguiente argumento init. opcional init: La función inicializadora que especifica cómo se calcula el estado inicial. Si no se especifica, el estado inicial se establece en initialArg. En caso contrario, el estado inicial es el resultado de llamar a init(initialArg).</li>
+          </ol>
+        <h2>Dispatch</h2>
+          <p>La función dispatch devuelta por useReducer te permite actualizar el estado a un valor diferente y activar una nueva renderización. Es necesario pasar la acción como único argumento a la función dispatch:</p>
+          const [state, dispatch] = useReducer(reducer, { age: 42 });
+
+            function handleClick() {
+            dispatch({ type: 'incremented_age' });
+            // ...
+            }
+
+            <ol>Parámetro
+                <li>action: La acción realizada por el usuario. Puede ser un valor de cualquier tipo. Por convención, una acción suele ser un objeto con una propiedad type que lo identifica y, opcionalmente, otras propiedades con información adicional.</li>
+            </ol>
+   </code>
+   
+
+</pre>
+    <h1>UserContext</h1>
+    <pre>
+            <code>
+            <h2>Crear el context</h2>
+
+            export const UserContext=createContext();
+            <h3>Ejemplo:</h3>
+
+            &lt;ThemeContext.Provider value="dark"&gt;
+            &lt;Form /&gt;
+          &lt;/ThemeContext.Provider&gt;
+          
+            </code>
+        </pre>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>UseEffect</h1>
+    <p>El Hook useEffect es un Hook de efecto que nos permite ejecutar tareas secundaria dentro de nuestros componentes funcionales, por ejemplo, podemos emular los métodos de ciclo de vida, sin la necesidad de utilizar componentes de clase.</p>
+    <pre>
+        <code>
+            <h3>UseEffect con parámetro vacío</h3>
+            const [data, setData] = useState(null);
+
+            useEffect(() => {
+                fetch('https://api.example.com/data')
+                  .then(response => response.json())
+                  .then(data => setData(data));
+              }, []);
+              <h3>UseEffect con parámetro: </h3>
+              useEffect(() => {
+                // efecto
+            }, [data]);
+            <p>En este caso, cuando el valor de data cambia, el efecto se vuelve a ejecutar</p>
+        </code>
+</pre>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React - UseState</title>
+</head>
+
+<body>
+
+    <h1>React - UseState</h1>
+
+    <p>
+        <strong>UseState:</strong> Hook de React para agregar una variable de estado al componente.
+    </p>
+
+    <h2>Ejemplo 1:</h2>
+
+    <pre>
+        <code>
+            const [age, setAge] = useState(0);
+            setAge[age+1];
+        </code>
+    </pre>
+
+    <p>
+        <strong>age:</strong> Variable de estado que mantiene los datos entre renderizaciones.<br>
+        <strong>setAge:</strong> Función que setea el estado y provoca una nueva renderización.<br>
+        <strong>0:</strong> Valor inicial de la variable de estado.
+    </p>
+
+    <h2>Ejemplo 2:</h2>
+    <pre>
+        <code>
+            const [form, setForm] = useState({
+                firstName: 'Stefano',
+                lastName: 'Soto',
+                email: 'stefano13soto@gmail.com',
+              });
+            
+                        &lt;input
+            value=&#123;form.firstName&#125;
+            onChange=&#123;e => &#123;
+                setForm(&#123;
+                ...form,
+                firstName: e.target.value
+                &#125;);
+            &#125;&#125;
+            /&gt;
+
+
+        </code>
+    </pre>
+    <h2>Usos comunes:</h2>
+
+    <ul>
+        <li>Manejo de variables que cambian con el tiempo.</li>
+        <li>Actualizar y renderizar componentes basados en eventos o interacciones del usuario.</li>
+        <li>Controlar el estado de formularios y manejar eventos como clics o envíos.</li>
+    </ul>
+
+    <p>
+        <strong>Documentación:</strong> <a href="https://es.react.dev/reference/react/useState" target="_blank">Revisar
+            Documentación</a>
+    </p>
+
+    <h1>Consumir API</h1>
+    <pre>
+        <code>
+            const[characters,setCharacters]=useState([]);
+
+            const getCharacters=async()=>{
+                const {data:{results}}=await axios.get('https://rickandmortyapi.com/api/character');
+                setCharacters([
+                  ...results
+                ])
+              }
+
+              const obtener= await getCharacters();
+        </code>
+    </pre>
+
+</body>
+
+</html>
