@@ -5,33 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React - UseState</title>
+    <style>
+        pre{
+            background-color: black;
+        }
+        body{
+            background-image: url('https://img.freepik.com/foto-gratis/fondo-pantalla-computadora-geometrica-abstracta-borde-blanco-puntos-conexion-diseno-vectores-tecnologia-digital_53876-160227.jpg');
+        }
+        h1{
+            color: darkgoldenrod;
+        }
+        #principal {
+
+            display: flex; /* Usa flexbox para alinear los contenedores hijos */
+            justify-content:center; /* Coloca los contenedores hijos a los extremos */
+            width: 100%;
+        }
+        img{
+            margin-left: 70px;
+        }
+        .n2{
+            
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .n1{
+            
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .n2c{
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="principal">
+        <div class="n2">
+            <div class="n2c">
+                <h1>React - UseState</h1>
 
-    <h1>React - UseState</h1>
+            <p>
+                <strong>UseState:</strong> Hook de React para agregar una variable de estado al componente.
+            </p>
 
-    <p>
-        <strong>UseState:</strong> Hook de React para agregar una variable de estado al componente.
-    </p>
+            <h2>Ejemplo 1:</h2>
 
-    <h2>Ejemplo 1:</h2>
-
-    <pre>
+            <pre>
         <code>
             const [age, setAge] = useState(0);
             setAge[age+1];
         </code>
     </pre>
 
-    <p>
-        <strong>age:</strong> Variable de estado que mantiene los datos entre renderizaciones.<br>
-        <strong>setAge:</strong> Función que setea el estado y provoca una nueva renderización.<br>
-        <strong>0:</strong> Valor inicial de la variable de estado.
-    </p>
+            <p>
+                <strong>age:</strong> Variable de estado que mantiene los datos entre renderizaciones.<br>
+                <strong>setAge:</strong> Función que setea el estado y provoca una nueva renderización.<br>
+                <strong>0:</strong> Valor inicial de la variable de estado.
+            </p>
 
-    <h2>Ejemplo 2:</h2>
-    <pre>
+            <h2>Ejemplo 2:</h2>
+            <pre>
         <code>
             const [form, setForm] = useState({
                 firstName: 'Stefano',
@@ -52,21 +91,27 @@
 
         </code>
     </pre>
-    <h2>Usos comunes:</h2>
+            </div>
+            
+            <h2>Usos comunes:</h2>
 
-    <ul>
-        <li>Manejo de variables que cambian con el tiempo.</li>
-        <li>Actualizar y renderizar componentes basados en eventos o interacciones del usuario.</li>
-        <li>Controlar el estado de formularios y manejar eventos como clics o envíos.</li>
-    </ul>
+            <ul>
+                <li>Manejo de variables que cambian con el tiempo.</li>
+                <li>Actualizar y renderizar componentes basados en eventos o interacciones del usuario.</li>
+                <li>Controlar el estado de formularios y manejar eventos como clics o envíos.</li>
+            </ul>
 
-    <p>
-        <strong>Documentación:</strong> <a href="https://es.react.dev/reference/react/useState" target="_blank">Revisar
-            Documentación</a>
-    </p>
+            <p>
+                <strong>Documentación:</strong> <a href="https://es.react.dev/reference/react/useState"
+                    target="_blank">Revisar
+                    Documentación</a>
+            </p>
+        </div>
 
-    <h1>Consumir API</h1>
-    <pre>
+
+        <div class="n1">
+            <h1>Consumir API</h1>
+            <pre>
         <code>
             const[characters,setCharacters]=useState([]);
 
@@ -80,6 +125,13 @@
               const obtener= await getCharacters();
         </code>
     </pre>
+        <img  width="500px" height="250px" src="https://miro.medium.com/v2/resize:fit:720/0*OHZ-Hc4aANqMq141.png" alt="react">
+        </div>
+
+    </div>
+
+
+
 
 </body>
 

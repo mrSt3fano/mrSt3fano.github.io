@@ -4,38 +4,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NEXT JS</title>
+    <style>
+        body{
+            background-image: url('https://www.shutterstock.com/image-vector/seamless-background-abstract-texture-wavy-600nw-2315846701.jpg');
+        }
+        .p {
+            background-color: lavender;
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .q1 {
+            max-width: 500px;
+            background-color:rgba(247, 248, 248, 0.705);
+            color: black;
+            margin: 2em auto;
+            padding: 20px;
+            box-shadow: 0 0 10px;
+            border-radius: 8px;
+        }
+
+        .q2 {
+            max-width: 700px;
+            background-color: rgba(57, 59, 59, 0.705);
+            color: aliceblue;
+            margin: 2em auto;
+            padding: 20px;
+            box-shadow: 0 0 10px;
+            border-radius: 8px;
+        }
+
+        .q3 {
+            max-width: 500px;
+            background-color: rgba(57, 59, 59, 0.705);
+            color: aliceblue;
+            margin: 2em auto;
+            padding: 20px;
+            box-shadow: 0 0 10px;
+            border-radius: 8px;
+            /* Ajusta este valor según sea necesario */
+            margin-right: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: brown;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 90px;
+        }
+    </style>
 </head>
 
 <body>
     <h1>NEXT JS</h1>
-    <p>Next.js es un framework de React de fácil uso y escalable.
-        Ofrece mejores características en: velocidad de carga de la
-        página, experiencia del usuario, SSR y pre-renderizado
-        estático.</p>
-    <h2>Componentes de lado del servidor-cliente</h2>
-    <p>Si dividimos la página en componentes pequeños, notará que la mayoría de los
-        componentes no son interactivos y se pueden presentar en el servidor como componentes
-        del servidor. <br>Para piezas más pequeñas de interfaz de usuario interactiva, podemos
-        agregar componentes de cliente. Next js dice enfoque de servidor primero</p>
-    <img width="500px" height="250px" src="https://miro.medium.com/v2/resize:fit:1400/0*M2HXYaFMhZMtTfNK.png"
-        alt="servercompnet">
-    <h3>¿Por qué componentes de servidor?</h3>
-    <p>Los componentes del servidor permiten a los desarrolladores aprovechar mejor la
-        infraestructura del servidor.</p>
-    <p>Con Server Components, la carga de la página inicial es más rápida y el tamaño del
-        paquete de JavaScript del lado del cliente se reduce. El tiempo de ejecución base del lado
-        del cliente es almacenable en caché y de tamaño predecible , y no aumenta a medida
-        que crece su aplicación.</p>
-        <h4><strong>OJO:</strong></h4>
-        <p>todos los componentes dentro
-            de App Router son componentes del servidor de forma predeterminada, incluidos los
-            archivos especiales y los componentes colocados.</p>
-    <h3>¿Por qué componentes de cliente?</h3>
-    <p>Los componentes de cliente le permiten agregar interactividad en client-side a su
-        aplicación. En Next.js, se pre-renderizan en el servidor y se complementa en el cliente.</p>
-        <p>La directiva 'use client' es una convención para declarar un límite entre un componente
-            de servidor y cliente encima del código.</p>
+    <div class="q1">
+        <h2>Componentes de lado del servidor-cliente</h2>
+        <img width="500px" height="250px" src="https://miro.medium.com/v2/resize:fit:1400/0*M2HXYaFMhZMtTfNK.png"
+            alt="servercompnet">
+    </div>
+    <div class="p">
+
+        <div class="q2">
+            <h3>¿Por qué componentes de servidor?</h3>
+            <p>Los componentes del servidor permiten a los desarrolladores aprovechar mejor la
+                infraestructura del servidor.</p>
+            <p>Con Server Components, la carga de la página inicial es más rápida y el tamaño del
+                paquete de JavaScript del lado del cliente se reduce. El tiempo de ejecución base del lado
+                del cliente es almacenable en caché y de tamaño predecible , y no aumenta a medida
+                que crece su aplicación.</p>
+            <h4><strong>OJO:</strong></h4>
+            <p>todos los componentes dentro
+                de App Router son componentes del servidor de forma predeterminada, incluidos los
+                archivos especiales y los componentes colocados.</p>
+        </div>
+        <div class="q3">
+            <h3>¿Por qué componentes de cliente?</h3>
+            <p>Los componentes de cliente le permiten agregar interactividad en client-side a su
+                aplicación. En Next.js, se pre-renderizan en el servidor y se complementa en el cliente.</p>
+            <p>La directiva 'use client' es una convención para declarar un límite entre un componente
+                de servidor y cliente encima del código.</p>
+        </div>
+    </div>
+
+
 </body>
 
 </html>
